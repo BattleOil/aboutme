@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Please wait</title>
+<script type="text/javascript">
+　　var type = navigator.appName;
+　　if (type == "Netscape"){
+    　　var lang = navigator.language;//获取浏览器配置语言，支持非IE浏览器
+　　}else{
+    　　var lang = navigator.userLanguage;//获取浏览器配置语言，支持IE5+ == navigator.systemLanguage
+　　};
+　　var lang = lang.substr(0, 2);//获取浏览器配置语言前两位
+　　if (lang == "zh"){
+   　　 window.location.replace('/zh-cn');
+　　    //window.location.replace('url');//中文编码时打开链接
+　　}else if (lang == "en"){
+   　　 window.location.replace('/en-ca');
+　　}else{//其他语言编码时打开以下链接
+   　　 window.location.replace('/en-ca');
+　　};
+</script> 
+<!--
+————————————————
+版权声明：本文为CSDN博主「绿箩」的原创文章，遵循 CC 4.0 BY-SA 版权协议，转载请附上原文出处链接及本声明。
+原文链接：https://blog.csdn.net/qq_26212731/article/details/78457198
+-->
+</head>
+
+<body>
+</body>
+</html>
