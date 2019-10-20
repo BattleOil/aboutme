@@ -3,7 +3,6 @@
 
 body{
 	font-size:14px;
-    background-color: #000000
 }
 
 .backgroundImage{
@@ -16,13 +15,57 @@ body{
     left:0;
     background:url("../../images/Fontpage/Background-Desktop.jpg") center no-repeat;
     background-size: cover;
-    opacity: 0.5;
     z-index: -1;
+}
+
+.divbackgroundcolor{
+    width:100%;
+    height:100%;
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    top:0;
+    left:0;
+    background:rgba(0,0,0,.6);
 }
 
 .languageselector{
     float: right;
-    width: 20%;
+    width: 10%;
     height: 5%;
+    color:white;
+}
+
+.languageselector p{
+    vertical-align: middle;
+    text-align: center;
+    font-size: 2vw;
+    font-weight: bold;
+    text-shadow: 0.2vw 0.1vw 0.35vw #000;
+    margin: 5%;
+    
+}
+
+.languageselector span a{
+   text-decoration: none;
+   color: #FFFFFF;
+}
+
+.languageselector span a:hover{
+   text-decoration: none;
+   border-bottom: 0.3vw solid #FFF;
+   transition: all 150ms ease-in-out;
+}
+
+.selectCN{
+    margin-right:6%;
+}
+
+.selectEN{
+    margin-left:6%;
+}
+
+.selected{
+    border-bottom: 0.3vw solid #FFF;
 }
 
