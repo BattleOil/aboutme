@@ -90,8 +90,6 @@ body{
     margin-top:1%;
     right: constant(safe-area-inset-right) !important; /*如果未竖屏时为0*/
     right: env(safe-area-inset-right) !important;
-    left: constant(safe-area-inset-left) ; /*如果未竖屏时为0*/
-    left: env(safe-area-inset-left) ;
 }
 
 .languageselector p{
@@ -135,8 +133,6 @@ body{
     height: 35vh;
     color:white;
     margin:2% 3%;
-    right: constant(safe-area-inset-right) !important; /*如果未竖屏时为0*/
-    right: env(safe-area-inset-right) !important;
     left: constant(safe-area-inset-left) ; /*如果未竖屏时为0*/
     left: env(safe-area-inset-left) ;
 }
