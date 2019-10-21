@@ -11,12 +11,11 @@ body{
     height:100%;
     position: absolute;
     margin: 0;
-    padding: 0;
     top:0;
     left:0;
     background:url("../../images/Fontpage/Background-Desktop.jpg") center no-repeat;
     background-size: cover;
-    padding: 1;
+    padding:1px;
     box-sizing:border-box;
     z-index: -3;
 }
