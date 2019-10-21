@@ -14,8 +14,10 @@ body{
     padding: 0;
     top:0;
     left:0;
-    background:url("../../images/Fontpage/Background-Desktop.webp") center no-repeat;
+    background:url("../../images/Fontpage/Background-Desktop.jpg") center no-repeat;
     background-size: cover;
+    padding: 1;
+    box-sizing:border-box;
     z-index: -3;
 }
 
@@ -27,7 +29,7 @@ body{
     left:0;
     top:0;
     background: inherit;
-    filter: blur(15px);
+    filter: blur(5px);
     z-index: -2;
 }
 
@@ -39,7 +41,7 @@ body{
     padding: 0;
     top:0;
     left:0;
-    background:url("../../images/Fontpage/Background-Desktop.webp") center no-repeat;
+    background:url("../../images/Fontpage/Background-Desktop.jpg") center no-repeat;
     background-size: cover;
     z-index: -1;
     padding-top:constant(safe-area-inset-top);   /*为导航栏+状态栏的高度 88px*/         
