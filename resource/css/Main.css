@@ -3,10 +3,6 @@
 
 body{
 	font-size:16px;
-    padding-top:constant(safe-area-inset-top);   /*为导航栏+状态栏的高度 88px*/         
-    padding-left:constant(safe-area-inset-left);   /*如果未竖屏时为0*/                
-    padding-right:constant(safe-area-inset-right);  /*如果未竖屏时为0*/                
-    padding-bottom:constant(safe-area-inset-bottom); /*为底下圆弧的高度 34px*/   
 }
 
 .backgroundBlur{
@@ -47,6 +43,19 @@ body{
     background-size: cover;
     z-index: -1;
      
+}
+
+@supports {
+    .backgroundImage {
+        padding-top:constant(safe-area-inset-top);   /*为导航栏+状态栏的高度 88px*/
+        padding-top:env(safe-area-inset-top);
+        padding-left:constant(safe-area-inset-left);   /*如果未竖屏时为0*/
+        padding-left:env(safe-area-inset-left);
+        padding-right:constant(safe-area-inset-right);  /*如果未竖屏时为0*/
+        padding-right:env(safe-area-inset-right);
+        padding-bottom:constant(safe-area-inset-bottom); /*为底下圆弧的高度 34px*/
+        padding-bottom:env(safe-area-inset-bottom);
+    }
 }
 
 .divbackgroundcolor{
