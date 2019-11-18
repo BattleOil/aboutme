@@ -54,6 +54,7 @@ body{
     }
 }
 
+
 .ios_support_top {
     top: constant(safe-area-inset-top) ;/*为导航栏+状态栏的高度 88px*/
     top: env(safe-area-inset-top) ;
