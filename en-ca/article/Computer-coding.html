@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en-ca" dir="ltr">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="x-ua-compatible" content="ie=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+        <meta name="theme-color" content="#2C3340"/>
+        <title>Homework page for Klose Continuation of Learning - No man's Island</title>
+        <!--OG meta-->
+        <meta property="og:site_name" content="No man's Island">
+        <meta property="og:url" content="https://battleoil.github.io/en-ca/" />
+        <meta property="og:title" content="No man's Island" />
+        <meta property="og:description" content="A new immigrant blog site records his life in Canada." />
+        <meta property="og:image" content="https://battleoil.github.io/images/icon/favicon.png">
+        <meta property="og:type" content="website" />
+        <meta name="twitter:url" content="https://battleoil.github.io/en-ca/" />
+        <!--twtter meta-->
+        <meta name="twitter:title" content="No man's Island" />
+        <meta name="twitter:description" content="A new immigrant blog site records his life in Canada." />
+        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:image" content="https://battleoil.github.io/images/icon/favicon.png" />
+        <!--description-->
+        <meta name="description" content="A new immigrant blog site records his life in Canada."/>
+        <!--same below-->
+        <meta http-equiv="cleartype" content="on">
+        <meta name="format-detection" content="telephone=no" />
+        <link rel="apple-touch-icon" href="../images/icon/favicon.png">
+        <link rel="apple-touch-startup-image" href="../images/icon/favicon.png">
+        <link rel="shortcut icon" href="../images/icon/favicon.png">
+        <!--The link documents-->
+        <link href="../resource/css/Safearea_Support.css" rel="stylesheet" type="text/css">
+    </head>
+
+    <body>
+        <script>
+            function canvas1(){
+                var canvas=document.getElementById('canvas1');
+                var context=canvas.getContext('2d');
+                var imgURL=canvas.toDataURL('image/png');
+                context.ellipse(200,200,300,350);
+
+            }
+            function canvas2(){
+                var canvas=document.getElementById('canvas2');
+                var context=canvas.getContext('2d');
+                var imgURL=canvas.toDataURL('image/png');
+                context.beginPath();
+                context.ellipse(250,250,200,200,0,0,2*Math.PI);
+                context.stroke();
+                context.beginPath();
+                context.ellipse(200,140,25,25,0,0,360);
+                context.stroke();
+                context.beginPath();
+                context.ellipse(360,140,25,25,0,0,360);
+                context.stroke();
+                context.beginPath();
+                context.ellipse(290,280,80,60,0,0,360);
+                context.stroke();
+            }
+            function canvas3(){
+                var canvas=document.getElementById('canvas3');
+                var context=canvas.getContext('2d');
+                var imgURL=canvas.toDataURL('image/png');
+                context.fillStyle = "#FFF";
+                context.beginPath();
+                context.rect(0,430,500,70);
+                context.stroke();
+                context.beginPath();
+                context.ellipse(250,350,100,100,0,0,360);
+                context.fill();
+                context.stroke();
+                context.beginPath();
+                context.ellipse(250,200,75,75,0,0,360);
+                context.fill();
+                context.stroke();
+                context.beginPath();
+                context.ellipse(250,100,50,50,0,0,360);
+                context.fill();
+                context.stroke();
+                context.beginPath();
+                context.moveTo(175,200);
+                context.lineTo(115,120);
+                context.stroke();
+                context.beginPath();
+                context.moveTo(325,200);
+                context.lineTo(385,120);
+                context.stroke();
+            }
+        </script>
+        <contents>
+            <h1>Homework page for Klose Continuation of Learning</h1>
+            <p>You can click the blank to draw the paint.</p>
+            <h2>April 15th, 2020<h2>
+                <canvas id="canvas1" width="500" height="500" onclick="canvas1()">Sorry, your browser doesn't support the canvas element. Why not give Microsoft Edge a try?</canvas>
+            <h2>April 20th, 2020<h2>
+                <h3>Making drawings with code</h3>
+                <canvas id="canvas2" width="500" height="500" onclick="canvas2()">Sorry, your browser doesn't support the canvas element. Why not give Microsoft Edge a try?</canvas>
+            <h2>May 4th, 2020<h2>
+                <h3>Waving snowman</h3>
+                <canvas id="canvas3" width="500" height="500" onclick="canvas3()">Sorry, your browser doesn't support the canvas element. Why not give Microsoft Edge a try?</canvas>
+                <img src="...\images\Article-assets\Challenge Waving snowman.jpg" width="150"/>
+            <h2>May 11th, 2020<h2>
+                <h3>Bucktooth Bunny</h3>
+                <canvas id="canvas4" width="500" height="500" onclick="canvas4()">Sorry, your browser doesn't support the canvas element. Why not give Microsoft Edge a try?</canvas>
+                <h3>Bucktooth Bunny</h3>
+                <canvas id="canvas5" width="500" height="500" onclick="canvas4()">Sorry, your browser doesn't support the canvas element. Why not give Microsoft Edge a try?</canvas>
+        </contents>
+    </body>
+</html>
