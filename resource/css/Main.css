@@ -48,9 +48,11 @@ body{
 @media (max-width:800px){
     .backgroundImage{
         background:url("../../images/Fontpage/Background-Mobile.jpg") center no-repeat;
+	    background-position-y: 35%;
     }
     .backgroundBlur{
         background:url("../../images/Fontpage/Background-Mobile.jpg") center no-repeat;
+		background-position-y: 35%;
     }
 }
 
