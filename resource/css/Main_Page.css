@@ -1,0 +1,146 @@
+@charset "utf-8";
+/* CSS Document */
+
+body{
+	font-size:16px;
+    font-family: SF Pro Display,SF Pro Icons,AOS Icons,Helvetica Neue,Helvetica,Arial,sans-serif,Microsoft YaHei UI;
+}
+
+.backgroundBlur{
+    width:100%;
+    height:100%;
+    position: fixed;
+    margin: 0;
+    top:0;
+    left:0;
+    background:url("../../images/Fontpage/Background-Desktop.jpg") center no-repeat;
+    background-size: cover;
+    padding:1px;
+    box-sizing:border-box;
+    z-index: -3;
+}
+
+.backgroundBlur:after{
+    content: "";
+    width:100%;
+    height:100%;
+    position: fixed;
+    left:0;
+    top:0;
+    background: inherit;
+    filter: blur(5px);
+    z-index: -2;
+}
+
+.backgroundImage{
+    height:100%;
+    position: fixed;
+    padding: 0px;
+    margin: 0px;
+    top:0;
+    left:0;
+    background:url("../../images/Fontpage/Background-Desktop.jpg") center no-repeat;
+    background-size: cover;
+    z-index: -1;
+     
+}
+
+@media (max-width:800px){
+    .backgroundImage{
+        background:url("../../images/Fontpage/Background-Mobile.jpg") center no-repeat;
+	    background-position-y: 35%;
+    }
+    .backgroundBlur{
+        background:url("../../images/Fontpage/Background-Mobile.jpg") center no-repeat;
+		background-position-y: 35%;
+    }
+}
+
+.divbackgroundcolor{
+    height:100%;
+    position: fixed;
+    margin: 0;
+    padding: 0;
+    top:0;
+    left: constant(safe-area-inset-left) ; /*如果未竖屏时为0*/
+    left: env(safe-area-inset-left) ;
+    right: constant(safe-area-inset-right) ; /*如果未竖屏时为0*/
+    right: env(safe-area-inset-right) ;
+    background:rgba(0,0,0,.5);
+}
+
+.languageselector{
+    width: 10vh;
+    height: 5vh;
+    color:white;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    position: fixed;
+    margin-right: 1%;
+    margin-top:1%;
+    right: constant(safe-area-inset-right) !important; /*如果未竖屏时为0*/
+    right: env(safe-area-inset-right) !important;
+}
+
+.languageselector p{
+    vertical-align: middle;
+    text-align: center;
+    font-size: 2vh;
+    font-weight: bold;
+    text-shadow: 0.2vh 0.1vh 0.5vh #000;
+    margin: 5%;
+}
+
+
+.languageselector span a{
+   text-decoration: none;
+   color: #FFFFFF;
+}
+
+.languageselector span a:hover{
+   text-decoration: none;
+   border-bottom: 0.3vh solid #FFF;
+   transition: all 150ms ease-in-out;
+}
+
+.selectCN{
+    margin-right:10%;
+}
+
+.selectEN{
+    margin-left:10%;
+}
+
+.selected{
+    border-bottom: 0.3vh solid #FFF;
+}
+
+.navguide{
+    float: left;
+    position: fixed;
+    bottom: 5%;
+    width: 40vh;
+    height: 35vh;
+    color:white;
+    margin:2% 3%;
+    left: constant(safe-area-inset-left) ; /*如果未竖屏时为0*/
+    left: env(safe-area-inset-left) ;
+}
+
+.navguide h1{
+    font-size: 4.5vh;
+    margin: 5% 0%;
+    margin-bottom: 0.8%;
+}
+
+.navguide h2{
+    font-size: 3.5vh;
+    margin: 4% 0%;
+    margin-top: 0%;
+}
+
+.navguide p{
+    font-size: 2.5vh;
+    margin: 3% 0%;
+}
