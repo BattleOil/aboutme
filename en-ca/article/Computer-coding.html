@@ -28,23 +28,25 @@
         <link rel="apple-touch-startup-image" href="../images/icon/favicon.png">
         <link rel="shortcut icon" href="../images/icon/favicon.png">
         <!--The link documents-->
-        <link href="../resource/css/Safearea_Support.css" rel="stylesheet" type="text/css">
-        <link href="../resource/css/Article_Page.css" rel="stylesheet" type="text/css">
+        <link href="/resource/css/Safearea_Support.css" rel="stylesheet" type="text/css">
+        <link href="/resource/css/Article_Page.css" rel="stylesheet" type="text/css">
     </head>
 
     <body>
         <header>
-            <ul>
-                <li>Home</li>
-                <li>Blog</li>
-                <li>Video</li>
-                <li>About Me</li>
-                <li>CN</li>
-            </ul>
+            <nav>
+                <ul>
+                <li><a href="/en-ca/index.html">Home</a></li>
+                <li><a href="/en-ca/article-list.html">Blog</a></li>
+                <li><a>Video</a></li>
+                <li><a>About Me</a></li>
+                </ul>
+            </nav>
+            <lang>CN</lang>
         </header>
         <contents>
             <script>
-                window.onload = function(){canvas1(), canvas2(), canvas3()}
+                window.onload = function(){canvas1(), canvas2(), canvas3(), canvas4(20,15)}
     
                 function canvas1(){
                     var canvas=document.getElementById('canvas1');
@@ -127,24 +129,81 @@
                     context.lineTo(385,120);
                     context.stroke();
                 }
+
+                function submit1(){
+                    var var1 = document.getElementById('var1').value;
+                    var var2 = document.getElementById('var2').value; 
+                    if(isNaN(var1)){
+                        alert("Please input a number.");
+                        var1=20;
+                    }
+                    else if(isNaN(var2)){
+                        alert("Please input a number.");
+                        var2=15;
+                    }
+                    canvas4(var1,var2);
+
+                }
+
+                function canvas4(var1,var2){
+                    var eye = var1;
+                    var teeth = var2;
+                    var canvas=document.getElementById('canvas4');
+                    var context=canvas.getContext('2d');
+                    var imgURL=canvas.toDataURL('image/png');
+                    context.fillStyle = "#FFF";
+                    context.beginPath();
+                    context.ellipse(150,125,60,120,50,0,360);
+                    context.fill();
+                    context.stroke();
+                    context.beginPath();
+                    context.ellipse(350,125,60,120,60,360,0,true);
+                    context.fill();
+                    context.stroke();
+                    context.beginPath();
+                    context.ellipse(250,250,150,150,0,0,360);
+                    context.fill();
+                    context.stroke();
+                    context.beginPath();
+                    context.moveTo(150,300);
+                    context.lineTo(350,300);
+                    context.stroke();
+                    context.beginPath();
+                    context.rect(220,300,30,teeth);
+                    context.stroke();
+                    context.beginPath();
+                    context.rect(250,300,30,teeth);
+                    context.stroke();
+                    context.fillStyle = "#000";
+                    context.beginPath();
+                    context.ellipse(200,200,eye,eye,0,0,360);
+                    context.fill();
+                    context.beginPath();
+                    context.ellipse(300,200,eye,eye,0,0,360);
+                    context.fill();
+
+
+                }
             </script>
             <h1>Homework page for Klose Continuation of Learning</h1>
             <p>You can click the blank to draw the paint.</p>
-            <h2>April 15th, 2020<h2>
+            <h2>April 15th, 2020<div class="highlighter"></div></h2>
                 <canvas id="canvas1" width="500" height="500" >Sorry, your browser doesn't support the canvas element. Why not give Microsoft Edge a try?</canvas>
-            <h2>April 20th, 2020<h2>
+            <h2>April 20th, 2020</h2>
                 <h3>Making drawings with code</h3>
                 <canvas id="canvas2" width="500" height="500" >Sorry, your browser doesn't support the canvas element. Why not give Microsoft Edge a try?</canvas>
-            <h2>May 4th, 2020<h2>
+            <h2>May 4th, 2020</h2>
                 <h3>Waving snowman</h3>
                 <canvas id="canvas3" width="500" height="500" >Sorry, your browser doesn't support the canvas element. Why not give Microsoft Edge a try?</canvas>
                 <br>
                 <img src="\images\Article-assets\Challenge Waving snowman.jpg" width="150"/>
-            <h2>May 11th, 2020<h2>
+            <h2>May 11th, 2020</h2>
                 <h3>Bucktooth Bunny</h3>
-                <canvas id="canvas4" width="500" height="500" onmousemove="canvas4()">Sorry, your browser doesn't support the canvas element. Why not give Microsoft Edge a try?</canvas>
+                <canvas id="canvas4" width="500" height="500">Sorry, your browser doesn't support the canvas element. Why not give Microsoft Edge a try?</canvas>
+                <p><label for="var1">Control Eye: </label><input type="text" id="var1" name="var1" placeholder="Numbers Only" />&nbsp;<input type="button" name="var1" value="Set" onclick="submit1()"></form></p>
+                <p><label for="var1">Control Bucktooth: </label><input type="text" id="var2" name="var2" placeholder="Numbers Only" pattern="(.*\d)"/>&nbsp;<input type="button" name="var2" value="Set" onclick="submit1()"></form></p>
                 <h3>Bucktooth Bunny</h3>
-                <canvas id="canvas5" width="500" height="500" onmousemove="canvas4()">Sorry, your browser doesn't support the canvas element. Why not give Microsoft Edge a try?</canvas>
+                <canvas id="canvas5" width="500" height="500">Sorry, your browser doesn't support the canvas element. Why not give Microsoft Edge a try?</canvas>
         </contents>
     </body>
 </html>
