@@ -46,7 +46,7 @@
         </header>
         <contents>
             <script>
-                window.onload = function(){canvas1(), canvas2(), canvas3(), canvas4(20,15)}
+                window.onload = function(){canvas1(), canvas2(), canvas3(), canvas4(20,15),canvas5(300,250)}
     
                 function canvas1(){
                     var canvas=document.getElementById('canvas1');
@@ -181,8 +181,54 @@
                     context.beginPath();
                     context.ellipse(300,200,eye,eye,0,0,360);
                     context.fill();
+                }
 
+                
+                function c5_submit(){
+                    var px=document.getElementById('x-range-1').value;
+                    var py=document.getElementById('y-range-1').value;
+                    canvas5(px,py);
+                }
 
+                function canvas5(var1,var2){
+                    var x=var1;
+                    var y=var2;
+                    var canvas=document.getElementById('canvas5');
+                    var context=canvas.getContext('2d');
+                    var imgURL=canvas.toDataURL('image/png');
+                    context.clearRect(0, 0, canvas.width, canvas.height);
+                    context.beginPath();
+                    context.fillStyle = "rgb(30,204,91)";
+                    context.beginPath();
+                    context.ellipse(x+100,y-80,35,35,0,0,360);
+                    context.fill();
+                    context.ellipse(x-100,y-80,35,35,0,0,360);
+                    context.fill();
+                    context.beginPath();
+                    context.ellipse(x,y,200,100,0,0,360);
+                    context.fill();
+                    context.beginPath();
+                    context.fillStyle = "#FFF";
+                    context.ellipse(x-100,y-80,25,25,0,0,360);
+                    context.ellipse(x+100,y-80,25,25,0,0,360);
+                    context.fill();
+                    context.beginPath();
+                    context.fillStyle = "#000";
+                    context.ellipse(x,y+25,85,38,0,0,360);
+                    context.fill();
+                    context.beginPath();
+                    context.ellipse(x-90,y-80,10,10,0,0,360);
+                    context.fill();
+                    context.beginPath();
+                    context.ellipse(x+90,y-80,10,10,0,0,360);    
+                    context.fill();
+                }
+
+                function frogsync(){
+                    var px=document.getElementById('x-range-1').value;
+                    var py=document.getElementById('y-range-1').value;
+                    document.getElementsByClassName("xrange-show")[0].value=px;
+                    document.getElementsByClassName("yrange-show")[0].value=py;
                 }
             </script>
             <h1>Homework page for Klose Continuation of Learning</h1>
@@ -202,8 +248,11 @@
                 <canvas id="canvas4" width="500" height="500">Sorry, your browser doesn't support the canvas element. Why not give Microsoft Edge a try?</canvas>
                 <p><label for="var1">Control Eye: </label><input type="text" id="var1" name="var1" placeholder="Numbers Only" />&nbsp;<input type="button" name="var1" value="Set" onclick="submit1()"></form></p>
                 <p><label for="var1">Control Bucktooth: </label><input type="text" id="var2" name="var2" placeholder="Numbers Only" pattern="(.*\d)"/>&nbsp;<input type="button" name="var2" value="Set" onclick="submit1()"></form></p>
-                <h3>Bucktooth Bunny</h3>
+                <h3>Funky Frog</h3>
                 <canvas id="canvas5" width="500" height="500">Sorry, your browser doesn't support the canvas element. Why not give Microsoft Edge a try?</canvas>
+                <p><label for="var1">Control Position: </label><br/>X:&nbsp;<input type="range" id="x-range-1" min="0" max="500" step="1" value="300" onchange="frogsync()" /><input type="text" class="xrange-show" value="300" size="3" disabled>&nbsp;<br/>Y:&nbsp;<input type="range" id="y-range-1" min="0" max="500" step="1" value="250" onchange="frogsync()"/>&nbsp;<input type="text" class="yrange-show" value="250" size="3" disabled> <br/><input type="button" name="canvas5_input" value="Set" onclick="c5_submit()"></form></p>
+            <h2>May 19th, 2020</h2>
+                
         </contents>
     </body>
 </html>
