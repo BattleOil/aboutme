@@ -190,9 +190,9 @@
                     canvas5(px,py);
                 }
 
-                function canvas5(var1,var2){
-                    var x=var1;
-                    var y=var2;
+                function canvas5(ix,iy){
+                    var x=ix;
+                    var y=iy;
                     var canvas=document.getElementById('canvas5');
                     var context=canvas.getContext('2d');
                     var imgURL=canvas.toDataURL('image/png');
@@ -251,8 +251,6 @@
                 <h3>Funky Frog</h3>
                 <canvas id="canvas5" width="500" height="500">Sorry, your browser doesn't support the canvas element. Why not give Microsoft Edge a try?</canvas>
                 <p><label for="var1">Control Position: </label><br/>X:&nbsp;<input type="range" id="x-range-1" min="0" max="500" step="1" value="300" onchange="frogsync()" /><input type="text" class="xrange-show" value="300" size="3" disabled>&nbsp;<br/>Y:&nbsp;<input type="range" id="y-range-1" min="0" max="500" step="1" value="250" onchange="frogsync()"/>&nbsp;<input type="text" class="yrange-show" value="250" size="3" disabled> <br/><input type="button" name="canvas5_input" value="Set" onclick="c5_submit()"></form></p>
-            <h2>May 19th, 2020</h2>
-                
         </contents>
     </body>
 </html>
