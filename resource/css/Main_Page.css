@@ -58,7 +58,7 @@ body{
 
 .divbackgroundcolor{
     height:100%;
-		dispaly: flex;
+display: flex;
     align-content: center;
     justify-content: center;
     position: fixed;
