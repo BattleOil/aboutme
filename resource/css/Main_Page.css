@@ -58,6 +58,9 @@ body{
 
 .divbackgroundcolor{
     height:100%;
+		dispaly: flex;
+    align-content: center;
+    justify-content: center;
     position: fixed;
     margin: 0;
     padding: 0;
@@ -67,9 +70,6 @@ body{
     right: constant(safe-area-inset-right) ; /*如果未竖屏时为0*/
     right: env(safe-area-inset-right) ;
     background:rgba(0,0,0,.5);
-    dispaly: flex;
-    align-content: center;
-    justify-content: center;
 }
 
 .languageselector{
