@@ -83,7 +83,7 @@ display: flex;
     font-size: 2vh;
     font-weight: bold;
     text-shadow: 0.2vh 0.1vh 0.5vh #000;
-    margin: 1vh;
+    margin: 2vh 2vw;
 }
 
 
@@ -99,7 +99,7 @@ display: flex;
 }
 
 .selectCN{
-    margin-right:2%;
+    margin-right:0.5vw;
 }
 
 .selectEN{
