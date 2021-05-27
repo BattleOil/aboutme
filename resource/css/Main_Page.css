@@ -67,20 +67,14 @@ body{
     right: constant(safe-area-inset-right) ; /*如果未竖屏时为0*/
     right: env(safe-area-inset-right) ;
     background:rgba(0,0,0,.5);
+    dispaly:flex;
+    align-content: center;
+    justify-content: center;
 }
 
 .languageselector{
-    width: 10vh;
     height: 5vh;
     color:white;
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    position: fixed;
-    margin-right: 1%;
-    margin-top:1%;
-    right: constant(safe-area-inset-right) !important; /*如果未竖屏时为0*/
-    right: env(safe-area-inset-right) !important;
 }
 
 .languageselector p{
@@ -89,7 +83,7 @@ body{
     font-size: 2vh;
     font-weight: bold;
     text-shadow: 0.2vh 0.1vh 0.5vh #000;
-    margin: 5%;
+    margin: 1vh;
 }
 
 
@@ -105,11 +99,11 @@ body{
 }
 
 .selectCN{
-    margin-right:10%;
+    margin-right:2%;
 }
 
 .selectEN{
-    margin-left:10%;
+
 }
 
 .selected{
@@ -118,14 +112,11 @@ body{
 
 .navguide{
     float: left;
-    position: fixed;
-    bottom: 5%;
     width: 40vh;
-    height: 35vh;
+    height: min-content;
     color:white;
-    margin:2% 3%;
-    left: constant(safe-area-inset-left) ; /*如果未竖屏时为0*/
-    left: env(safe-area-inset-left) ;
+    margin:6% 3%;
+    align-self:end;	
 }
 
 .navguide h1{
@@ -143,4 +134,11 @@ body{
 .navguide p{
     font-size: 2.5vh;
     margin: 3% 0%;
+}
+
+.Content{
+    height: auto;
+    width: 100%;
+    max-width: 2000px;
+    display: grid;
 }
