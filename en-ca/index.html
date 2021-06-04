@@ -31,6 +31,7 @@
         <link href="../resource/css/Safearea_Support.css" rel="stylesheet" type="text/css">
         <link href="../resource/css/Main_Page.css" rel="stylesheet" type="text/css">
         <link href="../resource/css/animation.css" rel="stylesheet" type="text/css">
+        <script src="../resource/js/Index_function.js"></script>
     </head>
 
     <body>
@@ -46,11 +47,14 @@
                             <h2>Find the lonely place</h2>
                             <p><a class="link header header--raiseUp" href="article-list.html">Blog</a></p>
                             <p><a class="link header header--raiseUp" href="#2">Video</a></p>
-                            <p><a class="link header header--raiseUp" href="#3">About me</a></p>
+                            <p><a class="link header header--raiseUp" href="#3" onClick="SetAboutMe(0)">About me</a></p>
                     </div>
                 </div>
             </div>
     </div>
-        </div>
+    <div id="aboutme" class="content">
+        <div><a onClick="SetAboutMe(100)">Close</a></div>
+    </div>
+    </div>
     </body>
 </html>
