@@ -148,5 +148,6 @@ display: flex;
     height: 100%;
     transform:translateY(100%);
     transition: 800ms transform;
-    transition-timing-function: cubic-bezier(0.18, -0.36, 0.75, 1.32);
+    transition-timing-function: cubic-bezier(0.5, -0.2, 0.2, 1);
 }
+
