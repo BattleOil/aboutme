@@ -47,18 +47,29 @@
                             <h2>My lonely place</h2>
                             <p><a class="link header header--raiseUp" href="article-list.html">Blog</a></p>
                             <p><a class="link header header--raiseUp" href="#2">Video</a></p>
-                            <p><a class="link header header--raiseUp" onClick="SetAboutMe(0)">About me</a></p>
+                            <p><a class="link header header--raiseUp" href="#AboutMe" onClick="SetAboutMe(0)">About me</a></p>
                     </div>
                 </div>
             </div>
     </div>
     <div id="aboutme">
-        <div class="content">
-            <div id="avatar">Someimage</div>
-            <div id="links">Steam unsplash</div>
-            <div id="infos">where am i</div>
+        <div class="flex content">
+            <div id="lcontent">
+                <div id="avatar">Someimage</div>
+                <div id="Social_links" class="links">
+                    <div>Twitter</div>
+                    <div>IG</div>
+                    <div>Unsplash</div>
+                </div>
+                <div id="Gamer_links" class="links">
+                    <div>Youtube</div>
+                    <div>Bilibili</div>
+                    <div>Steam</div>
+                </div>
+                <div id="infos">where am i</div>
+            </div>
             <div id="infof">detailed</div>
-            <div id="close"><a onClick="SetAboutMe(100)">Close</a></div>
+            <div id="CloseAboutme" onresize='SetClosePosition()'><button class="fbutton" onClick="SetAboutMe(101)">Close</button></div>
         </div>
     </div>
     </div>
