@@ -54,10 +54,6 @@ body{
         background:url("../../images/Fontpage/Background-Mobile.jpg") center no-repeat;
 		background-position-y: 35%;
     }
-    .flex{
-        display: flex;
-	flex-direction: column;
-    }
 }
 
 .divbackgroundcolor{
@@ -106,10 +102,6 @@ body{
     margin-right:0.5vw;
 }
 
-.selectEN{
-
-}
-
 .selected{
     border-bottom: 0.3vh solid #FFF;
 }
@@ -147,39 +139,25 @@ body{
     display: grid;
 }
 
-.flex{
-    display: flex;
-}
-
 #aboutme{
     width: 100%;
     height: 100%;
     display: flex;
     justify-content: center;
     transform:translateY(101%);
-    transition: 800ms transform;
+    transition: 800ms all;
     transition-timing-function: cubic-bezier(0.5, -0.2, 0.2, 1);
 }
 
-#lcontent{
+.flex.content{
     display: flex;
-    flex-direction: column;
-    width: 30vh;
     height: 100%;
 }
 
-.links{
-    height:8vh;
-}
-
-#infos{
+#aboutme iframe{
     height: 100%;
-    background:#004355;
-}
-
-#infof{
-    width: inherit;
-    background:#4f413e;
+    width: 100%;
+    border: none;
 }
 
 #CloseAboutme{

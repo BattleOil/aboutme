@@ -34,7 +34,7 @@
         <script src="../resource/js/Index_function.js"></script>
     </head>
 
-    <body onresize='SetClosePosition()'>
+    <body onresize='SetClosePosition()' onload='SetClosePosition()'>
     <div class="backgroundBlur">
     <div class="backgroundImage  ios_support_top">
             <div class="divbackgroundcolor">
@@ -54,21 +54,7 @@
     </div>
     <div id="aboutme">
         <div class="flex content">
-            <div id="lcontent">
-                <div id="avatar">Someimage</div>
-                <div id="Social_links" class="links">
-                    <div>Twitter</div>
-                    <div>IG</div>
-                    <div>Unsplash</div>
-                </div>
-                <div id="Gamer_links" class="links">
-                    <div>Youtube</div>
-                    <div>Bilibili</div>
-                    <div>Steam</div>
-                </div>
-                <div id="infos">where am i</div>
-            </div>
-            <div id="infof">detailed</div>
+            <iframe src="aboutme.html" title="AboutMePage" loading="eager"></iframe>
             <div id="CloseAboutme"><button class="fbutton" onClick="SetAboutMe(101)">Close</button></div>
         </div>
     </div>

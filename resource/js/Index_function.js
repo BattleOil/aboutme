@@ -9,4 +9,4 @@ function SetClosePosition() {
   if(w>2000){fr=(w-2000)/2;}else{fr=0;}
   document.getElementById('CloseAboutme').style.right = `${fr}px`;
 }
-document.getElementById("CloseAboutme").onload = SetClosePosition();
+
