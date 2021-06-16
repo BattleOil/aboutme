@@ -1,15 +1,9 @@
 @charset "utf-8";
 /* CSS Document */
 
-@media (max-width:800px){
-    .flex{
-        display: flex;
-	flex-direction: column;
-    }
-}
-
 body{
     margin: 0px;
+    font-family: SF Pro Display,SF Pro Icons,AOS Icons,Helvetica Neue,Helvetica,Arial,sans-serif,Microsoft YaHei UI;
 }
 
 .content{
@@ -26,15 +20,45 @@ body{
 #lcontent{
     display: flex;
     flex-direction: column;
-    width: 30vh;
+    width: 27vw;
     height: 100%;
+}
+
+#avatarinfo{
+    display: flex;
+    flex-direction: column;
+    background-color:#fff;
+}
+
+#avatar{
+    padding: 0.5vw;
+}
+
+#nametag{
+    align-self: center;
+    margin: 2vw;
+}
+
+#name{
+    margin: 0;
+    font-size: 2vw;
+    font-weight: bold;
+}
+
+#title{
+    margin:0.25vh auto 0 auto;
+    font-size: 1.5vw;
+    color:#919191;
 }
 
 .links{
     height:8vh;
     display: flex;
     flex-direction: row;
+    justify-content: space-evenly;
 }
+
+
 
 #infos{
     height: 100%;
@@ -46,4 +70,33 @@ body{
     background:#4f413e;
 }
 
+@media (max-width:800px){
+    .flex{
+        display: flex;
+	    flex-direction: column;
+    }
 
+    #lcontent{
+        width: 100%;
+    }
+
+    #avatar{
+        width: 30vw;
+        height: 30vw;
+        padding: 0;
+    }
+
+    #avatarinfo{
+        flex-direction: row;
+        justify-content: center;
+        padding:2vh 0;
+    }
+
+    #name{
+        font-size: 5.5vw;
+    }
+    
+    #title{
+        font-size: 3vw;
+    }
+}

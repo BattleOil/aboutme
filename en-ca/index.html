@@ -54,8 +54,12 @@
     </div>
     <div id="aboutme">
         <div class="flex content">
-            <iframe src="aboutme.html" title="AboutMePage" loading="eager"></iframe>
-            <div id="CloseAboutme"><button class="fbutton" onClick="SetAboutMe(101)">Close</button></div>
+            <iframe src="aboutme.html" title="AboutMePage" style="background-color:#3a3a3a;"> Missing Page </iframe>
+            <div id="CloseAboutme"><button class="fbutton" onClick="SetAboutMe(101)" onmouseover="ChangeAnimation()" onmouseout="ResetAnimation()">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:serif="http://www.serif.com/" width="100%" height="100%" viewBox="0 0 100 100" version="1.1" xml:space="preserve" class="CloseCanvas" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;transition:200ms all ease-in-out;">
+                    <path id="line1" d="M90,47.5c0,-1.38 -1.12,-2.5 -2.5,-2.5l-75,0c-1.38,0 -2.5,1.12 -2.5,2.5l0,5c0,1.38 1.12,2.5 2.5,2.5l75,0c1.38,0 2.5,-1.12 2.5,-2.5l0,-5Z" style="fill:#fff;"/>
+                    <path id="line2" d="M90,47.5c-0,-1.38 -1.12,-2.5 -2.5,-2.5l-75,-0c-1.38,-0 -2.5,1.12 -2.5,2.5l-0,5c-0,1.38 1.12,2.5 2.5,2.5l75,-0c1.38,-0 2.5,-1.12 2.5,-2.5l-0,-5Z" style="fill:#fff;"/></svg>
+            </button></div>
         </div>
     </div>
     </div>
