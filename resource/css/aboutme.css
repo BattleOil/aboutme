@@ -58,11 +58,26 @@ body{
     justify-content: space-evenly;
 }
 
+.wsvg_s{
+    width:4vh;
+    fill:white;
+}
 
+.tcenter{
+    align-self: center;
+}
+
+#Social_links{
+    background: #9D8BB7;
+}
+
+#Gamer_links{
+    background: #744DA9;
+}
 
 #infos{
     height: 100%;
-    background:#004355;
+    background: #A871F5;
 }
 
 #infof{
